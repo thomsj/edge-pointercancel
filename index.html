@@ -1,3 +1,24 @@
+<style>
+  div {
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+  }
+
+  #child {
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+    touch-action: none;
+  }
+</style>
+
 <div>
   <div id="child"></div>
 </div>
+
+<script>
+  document.onpointercancel = function () {
+    console.log("pointercancel");
+  };
+</script>
